@@ -247,6 +247,10 @@ img {
   width: 0.75rem;
   transition: all 0.25s linear;
 }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
 .mobile-nav .has-mobile-dropdown .dropdown-container {
   display: none;
   background: rgba(0, 0, 0, 0.035);
