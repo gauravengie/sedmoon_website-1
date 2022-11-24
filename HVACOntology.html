@@ -299,14 +299,15 @@
                                                     <div class="dropdown-container">
                                                         <ul class="dropdown">
                                                             <li><a href="BuildingOverview.html">Building</a></li>
+
                                                             <li><a href="HVACOverview.html">HVAC</a></li>
-                                                                <ul class="dropdown">
-                                                                    <li class="has-dropdown active">
-                                                                        <a href="HVACOntology.html">HVAC Ontology</a>
-                                                                    </li>
-                                                                </ul>
-                                                            <li><a href="GridsOverview.html">Grids</a></li>
-                                                            <li><a href="RenewableEnergyOverview.html">Renewable Energy</a></li>
+                                                            
+                                                            <ul class="dropdown">
+                                                                <li class="has-dropdown active">
+                                                                    <a href="HVACOntology.html">HVAC Ontology</a>
+                                                                </li>
+                                                            </ul>
+                                                        <li><a href="RenewableEnergyOverview.html">Renewable Energy</a></li>
                                                         </ul>
                                                     </div> 
                                                 </li>
@@ -319,64 +320,13 @@
                                 </ul>
                             </nav>
                         </aside>
-                        <section class="content">
-                            
-                <div class="wrapper">
-                    <div class="text-wrapper">
-                        <div>
-                            <div>
-                                <div>
-                                    <div>
-                                        <h1>HVAC</h1>
-                                    </div>
-                                    <div>
-                                        <p>The HVAC ontology defines systems relative to cooling, ventilation and air conditioning systems in building, their subsystems such as heating valve, cooling valve and the relationships between them. The HVAC is a system has three subsystems: the plt:HeatingSystem that is related by the relation plt:hasHeatingSystem, the &nbsp;plt:CoolingSystem &nbsp;that is related by the relation plt:hasCoolingSystem and the plt:VentilationSystem that is related by the relation plt:hasVentilationSystem. &nbsp;Saref:HVAC is located (s4bldg:is-ContainedIn) in s4bldg:Building. This HVAC is controlled by a plt:BuildingManagementSystem that controls (brick:controls) the HVAC.&nbsp;</p>
-                                        <p>The cooling system and heating system has respectively plt:CoolingValve and plt:HeatingValve that are their subsystem (seas:subSystemOf). Sometime, in HVAC system there is also an plt:AirHandlerUnit that is a seas:subSystemOf the saref:HVAC. This air handler is connected to the heating, the cooling, and the ventilation systems. A boiler (plt:Boiler) &nbsp;or heating coil (plt:HeatingCoil) can be subSystem of the heating system and the chiller (plt:Chiller) or cooling coil (plt:CoolingCoil) is a subSystem &nbsp;of cooling system. The plt:Fancoil that has a plt:Fan and s4bldg:Coil as a subsystem, is connected to the air handler unit.</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <figure>
-                                        <img src="./img/HVAC.drawio.png" alt="Image">
-                                        <figcaption>Platoon Data Model - HVAC</figcaption>
-                                    </figure>
-                
-                                    <div>
-                                        <h2>Use Case:&nbsp;</h2>
-                                    </div>
-                                    <div>
-                                        <ul>
-                                            <li>
-                                                <p>Providing Demand Response Service through HVAC control&nbsp;</p>
-                                            </li>
-                                            <li>
-                                                <p>Optimization of the control of the HVAC regarding occupancy (platoon pilot 3b).&nbsp;</p>
-                                            </li>
-                                            <li>
-                                                <p>Optimization HVAC operation as function of building and renewable energy resource (RES) characteristics, building comfort constraints, ambient conditions and energy market price following a multi-objective pattern which targets to reduce the overall energy bill and maximize the usage of RES. &nbsp;&nbsp;</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <ul>
-                                            <li>
-                                                <p>Advanced energy management system for Tertiary Buildings&nbsp;</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <p>&nbsp;</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                                                </div>
-
-
-                </div>
-            </section>      
+                        <section class="content" style="padding: 2px;">
+                            <iframe style="border:none;border-radius: 10px; overflow: hidden;" allowfullscreen height="1500" width="100%" aria-label="IFRAME" src="https://gauravjaglan.github.io/Ontology_documentation1/index.html" allowfullscreen=""></iframe>
+                      
+            </section>    
+  
         </main>
+
         <footer>
             <div class="wrapper footer-wrapper">
                 <nav aria-label="Footer" class="footer-nav">
