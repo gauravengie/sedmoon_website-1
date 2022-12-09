@@ -8,11 +8,6 @@
 @breakpoint-medium : 767px;
 @breakpoint-small : 520px;
 
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-  
 :root {
 	--color-primary : #007ACD;
     --color-accent : #F1468D;
@@ -664,7 +659,7 @@ header {
         gap : 2rem;
 
         a {
-            background : var(--color-primary);
+            background-color : var(--color-primary);
             padding : 1.25rem 2.5rem;
             border-radius: 3rem;
             color : #FFFFFF;
@@ -675,6 +670,21 @@ header {
             &:hover {
                 transform : scale(0.95);
             }
+        }
+
+        .has-icon {
+            a {
+                padding-left: 5rem;
+                background-repeat: no-repeat;
+                background-size: 26px 26px;
+                background-position: 1.65rem 50%;
+            }
+
+            &.building a {background-image : url(../img/icon-building.png);}
+            &.hvac a {background-image : url(../img/icon-hvac.png);}
+            &.grids a {background-image : url(../img/icon-grids.png);}
+            &.renewable a {background-image : url(../img/icon-renewable.png);}
+            &.common a {background-image : url(../img/icon-common.png);}
         }
     }
 }

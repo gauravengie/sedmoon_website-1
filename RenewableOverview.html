@@ -302,13 +302,13 @@
                                                         <ul class="dropdown">
                                                             <li><a href="BuildingOverview.html">Building</a></li>
                                                             <li><a href="HVACOverview.html">HVAC</a></li>
-                                                                <ul class="dropdown">
-                                                                    <li class="has-dropdown">
-                                                                        <a href="HVACOntology.html">HVAC Ontology</a>
-                                                                    </li>
-                                                                </ul>
                                                             <li><a href="GridOverview.html">Grids</a></li>
                                                             <li><a href="RenewableOverview.html">Renewable Energy</a></li>
+                                                                <ul class="dropdown">
+                                                                    <li class="has-dropdown">
+                                                                        <a href="RenewableOntology.html">Wind Turbine Ontology</a>
+                                                                    </li>
+                                                                </ul>
                                                         </ul>
                                                     </div> 
                                                 </li>
@@ -329,55 +329,53 @@
                             <div>
                                 <div>
                                     <div>
-                                        <h1>HVAC</h1>
+                                        <h1>Wind Turbine</h1>
                                     </div>
                                     <div>
-                                        <p>The HVAC ontology defines systems relative to cooling, ventilation and air conditioning systems in building, their subsystems such as heating valve, cooling valve and the relationships between them. The HVAC is a system has three subsystems: the plt:HeatingSystem that is related by the relation plt:hasHeatingSystem, the &nbsp;plt:CoolingSystem &nbsp;that is related by the relation plt:hasCoolingSystem and the plt:VentilationSystem that is related by the relation plt:hasVentilationSystem. &nbsp;Saref:HVAC is located (s4bldg:is-ContainedIn) in s4bldg:Building. This HVAC is controlled by a plt:BuildingManagementSystem that controls (brick:controls) the HVAC.&nbsp;</p>
-                                        <p>The cooling system and heating system has respectively plt:CoolingValve and plt:HeatingValve that are their subsystem (seas:subSystemOf). Sometime, in HVAC system there is also an plt:AirHandlerUnit that is a seas:subSystemOf the saref:HVAC. This air handler is connected to the heating, the cooling, and the ventilation systems. A boiler (plt:Boiler) &nbsp;or heating coil (plt:HeatingCoil) can be subSystem of the heating system and the chiller (plt:Chiller) or cooling coil (plt:CoolingCoil) is a subSystem &nbsp;of cooling system. The plt:Fancoil that has a plt:Fan and s4bldg:Coil as a subsystem, is connected to the air handler unit.</p>
-                                    </div>
+<p>Wind turbine ontology describes wind turbine and their components such as the generator and power converter and subcomponents such as rotor and stator. There are two different types of wind turbines: onshore wind turbine (plt:OnshoreWindTurbine) which is located on land, and offshore wind turbine (plt:OffshoreWindTurbine) which is located in bodies of water. Three key components of wind turbine are defined in this module; blade (plt:Blade), nacelle (plt:Nacelle), convertor (plt:Convertor). This module defines also Wind farm (plt:WindFarm) that is composed of a group of wind turbine in the same location used to produce electricity. The wind turbine is related to the wind farm by the (seas:isMemberOf) relation. </p>                                    
+</div>
                                 </div>
                                 <div>
                                     <figure>
-                                        <img src="./img/HVAC.drawio.png" alt="Image">
-                                        <figcaption>Platoon Data Model - HVAC</figcaption>
+                                        <img src="./img/Windturbine.drawio.png" alt="Image">
+                                        <figcaption>Platoon Data Model - Wind Turbine</figcaption>
                                     </figure>
                 
                                     <div>
                                         <h2>Use Cases:&nbsp;</h2>
                                     </div>
+
                                     <div>
-                                        <ul>
-                                            <li>
-                                                <p>Providing Demand Response Service through HVAC control&nbsp;</p>
-                                            </li>
-                                            <li>
-                                                <p>Optimization of the control of the HVAC regarding occupancy (platoon pilot 3b).&nbsp;</p>
-                                            </li>
-                                            <li>
-                                                <p>Optimization HVAC operation as function of building and renewable energy resource (RES) characteristics, building comfort constraints, ambient conditions and energy market price following a multi-objective pattern which targets to reduce the overall energy bill and maximize the usage of RES. &nbsp;&nbsp;</p>
-                                            </li>
-                                        </ul>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <p>Predictive maintenance of wind&nbsp;farms&nbsp;</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <p>Service for forecasting the power output of wind farms, the related uncertainties, and the optimal use of wind power in power system operations in order to facilitate large-scale integration of wind generation.&nbsp;</p>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div>
-                                        <ul>
-                                            <li>
-                                                <p>Advanced energy management system for Tertiary Buildings&nbsp;</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+
+  
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div>
-                            <h2><a style="font-weight:380;" href="HVACOntology.html">HVAC Ontology -></a></h2>
-                        </div>
-                                                </div>
 
+                    <div>
+                            <h2><a style="font-weight:380;" href="RenewableOntology.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wind Turbine Ontology -></a></h2>
+                        </div>
+                    </div>
+                </div>
 
                 </div>
             </section>      

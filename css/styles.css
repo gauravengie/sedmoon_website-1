@@ -247,10 +247,6 @@ img {
   width: 0.75rem;
   transition: all 0.25s linear;
 }
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
 .mobile-nav .has-mobile-dropdown .dropdown-container {
   display: none;
   background: rgba(0, 0, 0, 0.035);
@@ -582,7 +578,7 @@ header {
   gap: 2rem;
 }
 .content .capsule-list a {
-  background: var(--color-primary);
+  background-color: var(--color-primary);
   padding: 1.25rem 2.5rem;
   border-radius: 3rem;
   color: #FFFFFF;
@@ -592,6 +588,27 @@ header {
 }
 .content .capsule-list a:hover {
   transform: scale(0.95);
+}
+.content .capsule-list .has-icon a {
+  padding-left: 5rem;
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  background-position: 1.65rem 50%;
+}
+.content .capsule-list .has-icon.building a {
+  background-image: url(../img/icon-building.png);
+}
+.content .capsule-list .has-icon.hvac a {
+  background-image: url(../img/icon-hvac.png);
+}
+.content .capsule-list .has-icon.grids a {
+  background-image: url(../img/icon-grids.png);
+}
+.content .capsule-list .has-icon.renewable a {
+  background-image: url(../img/icon-renewable.png);
+}
+.content .capsule-list .has-icon.common a {
+  background-image: url(../img/icon-common.png);
 }
 /* -------------------------------------------------------------------------- */
 /*	Sidebar

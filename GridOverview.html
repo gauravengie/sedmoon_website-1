@@ -302,12 +302,18 @@
                                                         <ul class="dropdown">
                                                             <li><a href="BuildingOverview.html">Building</a></li>
                                                             <li><a href="HVACOverview.html">HVAC</a></li>
+                                                            <li><a href="GridOverview.html">Grids</a></li>
                                                                 <ul class="dropdown">
                                                                     <li class="has-dropdown">
-                                                                        <a href="HVACOntology.html">HVAC Ontology</a>
+                                                                        <a href="GridOntology.html">Grid Ontology</a>
+                                                                    </li>
+                                                                    <li class="has-dropdown">
+                                                                        <a href="ElecticPowerTransformerOntology.html">Electic Power Transformer Ontology</a>
+                                                                    </li>
+                                                                    <li class="has-dropdown">
+                                                                        <a href="StorageSystemOntology.html">Storage System Ontology</a>
                                                                     </li>
                                                                 </ul>
-                                                            <li><a href="GridOverview.html">Grids</a></li>
                                                             <li><a href="RenewableOverview.html">Renewable Energy</a></li>
                                                         </ul>
                                                     </div> 
@@ -329,55 +335,193 @@
                             <div>
                                 <div>
                                     <div>
-                                        <h1>HVAC</h1>
+                                        <h1>Grids</h1>
                                     </div>
+                                    <h2>Grid</h2>
+                                </div>
+                                <div>
                                     <div>
-                                        <p>The HVAC ontology defines systems relative to cooling, ventilation and air conditioning systems in building, their subsystems such as heating valve, cooling valve and the relationships between them. The HVAC is a system has three subsystems: the plt:HeatingSystem that is related by the relation plt:hasHeatingSystem, the &nbsp;plt:CoolingSystem &nbsp;that is related by the relation plt:hasCoolingSystem and the plt:VentilationSystem that is related by the relation plt:hasVentilationSystem. &nbsp;Saref:HVAC is located (s4bldg:is-ContainedIn) in s4bldg:Building. This HVAC is controlled by a plt:BuildingManagementSystem that controls (brick:controls) the HVAC.&nbsp;</p>
-                                        <p>The cooling system and heating system has respectively plt:CoolingValve and plt:HeatingValve that are their subsystem (seas:subSystemOf). Sometime, in HVAC system there is also an plt:AirHandlerUnit that is a seas:subSystemOf the saref:HVAC. This air handler is connected to the heating, the cooling, and the ventilation systems. A boiler (plt:Boiler) &nbsp;or heating coil (plt:HeatingCoil) can be subSystem of the heating system and the chiller (plt:Chiller) or cooling coil (plt:CoolingCoil) is a subSystem &nbsp;of cooling system. The plt:Fancoil that has a plt:Fan and s4bldg:Coil as a subsystem, is connected to the air handler unit.</p>
+                                        <p>
+                                            The grid ontology defines the electrical grid vocabulary. It extends the platoon electric power system ontology(plt:ElectricPowerSystem) with the entities defining the network of electricity delivery from producers to  consumers. It includes the grid (plt:ElectricalGrid) which is an seas:ElectricPowerSystem  and defined as an interconnected network for distributing electricity from producers to consumers. Various kinds of electric power systems are definned such as plt:ChargingStation (two types are cited: seas:ElectricVehiculeChargingStation, plt:BikeChargingStation), seas:ElectricVehicule, plt:ElectricBike, plt:ElectricHub, etc. One type of the electrical grid is plt:SmartMicroGrid which is connected to seas:ElectricPowerProducer. From the following types of the electric power producer, we have a photovoltainc plant (semanco:PVSystem). This system is composed of solar strings (plt:SolarArray) and solar modules (plt:SolarModule). All plt:SolarArray are connected in parallel (plt:isConnectedInParallel) and all plt:SolarModule are connected in series (plt:isConnectedInSeries).
+                                        </p>                                    
                                     </div>
                                 </div>
                                 <div>
                                     <figure>
-                                        <img src="./img/HVAC.drawio.png" alt="Image">
-                                        <figcaption>Platoon Data Model - HVAC</figcaption>
+                                        <img src="./img/ElectricPowerTransformer.drawio.png" alt="Image">
+                                        <figcaption>Platoon Data Model - Electic Power Transformer</figcaption>
                                     </figure>
                 
                                     <div>
                                         <h2>Use Cases:&nbsp;</h2>
                                     </div>
                                     <div>
-                                        <ul>
-                                            <li>
-                                                <p>Providing Demand Response Service through HVAC control&nbsp;</p>
-                                            </li>
-                                            <li>
-                                                <p>Optimization of the control of the HVAC regarding occupancy (platoon pilot 3b).&nbsp;</p>
-                                            </li>
-                                            <li>
-                                                <p>Optimization HVAC operation as function of building and renewable energy resource (RES) characteristics, building comfort constraints, ambient conditions and energy market price following a multi-objective pattern which targets to reduce the overall energy bill and maximize the usage of RES. &nbsp;&nbsp;</p>
-                                            </li>
-                                        </ul>
+                                        <div>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <p>Energy Management&nbsp;of&nbsp;Microgrids&nbsp;</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <p>Transformer predictive maintenance&nbsp;</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Predictive maintenance in RES power plants&nbsp;</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Non-technical loss detection in Smart Grids&nbsp;&nbsp;</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Energy Efficiency and Predictive Maintenance&nbsp;in&nbsp;The Smart Tertiary Building&nbsp;Hubgrade&nbsp;&nbsp;&nbsp;</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Service for analyzing and comparison between unexpected variations to voltage profile of the power system before and after RES integration to the power system.&nbsp;</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                                <ul>
+                                                    <li>
+                                                        <p>Balancing on country level (balancing services)&nbsp;</p>
+                                                    </li>
+                                                </ul>
+                                        </div>
                                     </div>
+                                </div>
+
+  
+                            </div>
+
+                                <div>
+
+                                    <p>&nbsp;</p>
+                                    <h3><a style="font-weight:280;" href="GridOntology.html">Grid Ontology -></a></h3>
+                               </div>     
+                               
+                               <p>&nbsp;</p>
+                          
+                               <div>
+                                <h2>Electic Power Transformer</h2>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <p>The electric power&nbsp;transformer&nbsp;ontology describes the vocabulary of electric power transformer system. It extends platoon electric power system ontology&nbsp;by describing the electric power transformer, their&nbsp;components,&nbsp;and related properties.&nbsp;The key concept of this&nbsp;module&nbsp;is the transformer(s4bldg:Transformer).&nbsp;The&nbsp;electric power transformer is an electric power system that is capable&nbsp;to&nbsp;transform electricity within a power network, between a primary connection point and a secondary connection point. Different systems are linked to the transformer such as&nbsp;plt:SecondaryWinding,&nbsp;plt:PrimaryWinding,&nbsp;plt:Insultation&nbsp;and&nbsp;plt:Casing.&nbsp;The transformer is connected to(seas:connectedTo)&nbsp;plt:ElectricalSubstation&nbsp;and it is contained in a transformer center&nbsp;(plt:TranformerCenter).&nbsp;Different properties are&nbsp;defined&nbsp;to estimate the Transformer Oil Temperature and&nbsp;the&nbsp;health index&nbsp;(plt:HealthIndexProperty)&nbsp;to estimate the remaining useful life of the transformer, &nbsp;taking into account some of the most important characteristics of its insulation system.&nbsp;&nbsp;</p>
+                                        </div>
+                                        <div>
+                                            <p>The subsystems of the transformer possess additional properties such as active power (cim:ActivePower), reactive power (cim:ReactivePower), voltage (seas:VoltageProperty) and current (seas:CurrentProperty). &nbsp;</p>
+                                        </div>
+                                        <div>
+                                            <p>The transformer is connected to a prosumer (oema:Prosumer) &nbsp;that blurs the distinction between consumer and producer. &nbsp;</p>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div>
+                                <figure>
+                                    <img src="./img/grid.drawio.png" alt="Image">
+                                    <figcaption>Platoon Data Model - Grid</figcaption>
+                                </figure>
+            
+                                <div>
+                                    <h2>Use Cases:&nbsp;</h2>
                                 </div>
                                 <div>
                                     <div>
-                                        <ul>
-                                            <li>
-                                                <p>Advanced energy management system for Tertiary Buildings&nbsp;</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <p>&nbsp;</p>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <p>Transformer predictive maintenance&nbsp;</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <p>Estimating transformer components health and its maintenance costs&nbsp;</p>
+                                                </li>
+                                                <li>
+                                                    <p>planning maintenance actions&nbsp;</p>
+                                                </li>
+                                                <li>
+                                                    <p>monitoring transformer alarms&nbsp;</p>
+                                                </li>
+                                                <li>
+                                                    <p>Studying different grid scenarios in case of replacing old transformers or adding complementary transformers.&nbsp;</p>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
+                                    
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h2><a style="font-weight:380;" href="HVACOntology.html">HVAC Ontology -></a></h2>
-                        </div>
-                                                </div>
+                            <p>&nbsp;</p>
 
+                            <div>
+                                <div>
+                                    <h3><a style="font-weight:380;" href="ElectricPowerTransformerOntology.html">Electric Power Transformer Ontology -></a></h3>
+                            </div> 
+                                </div>
+                            
+
+                                <p>&nbsp;</p>
+                          
+                                <div>
+                                 <h2>Storage System</h2>
+                                 <div>
+                                     <div>
+<p>
+    The storage system ontology defines the kind of storage system using on platoon project.  The key concept of this module is the storage system (plt:StorageSystem), it is extended by different types of storages such as seas:ElectricPowerStorageSystem, plt:HydrogenPowerToPowerSystem, plt:OxygenStorageSystem, plt:HydrogenStorageSystem, plt:ThermalStorageSystem , seas:Battery and  plt:SolarStorageSystem. Different properties are also specified such as plt:StorageGoodProperty, plt:StorageTimeReserveProperty, plt:StorageCapacityProperty. In this extended semantic data model, several relationships are described (e.g., plt:hasStorageChargingEfficiency, plt:hasStorageTimeReserve). A battery (seas:Battery)  has the ratio (seas:stateOfChargeRatio) and the setpoint (seas:stateOfChargeRatioSetpoint) of the charging state, which is a percentage (seas:PercentageProperty).
+</p>                                     </div>    
+                                 </div>
+                             </div>
+                             <div>
+                                 <figure>
+                                     <img src="./img/StorageSystem.drawio.png" alt="Image">
+                                     <figcaption>Platoon Data Model - Storage System</figcaption>
+                                 </figure>
+             
+                                 <div>
+                                     <h2>Use Cases:&nbsp;</h2>
+                                 </div>
+                                 <div>
+                                    <div>
+                                        <div><br>
+                                            <ul>
+                                                <li>
+                                                    <p>RES effects on the Power System &nbsp;</p>
+                                                </li>
+                                                <li>
+                                                    <p>Optimization the local renewable energy resources (RES)&nbsp;</p>
+                                                </li>
+                                                <li>
+                                                    <p>Renewable energy source forecasting&nbsp;</p>
+                                                </li>
+                                                <li>
+                                                    <p>Predictive maintenance in RES power plants&nbsp;</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div><br></div>
+                                </div>
+                             <p>&nbsp;</p>
+ 
+                             <div>
+                                 <div>
+                                     <h3><a style="font-weight:380;" href="StorageSystemOntology.html">Storage System Ontology -></a></h3>
+                             </div> 
+                                 </div>
+                             
+
+                    
 
                 </div>
             </section>      
