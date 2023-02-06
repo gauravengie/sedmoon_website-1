@@ -43,11 +43,11 @@
                                                                     </ul>
                                                                 </div> 
                                                             </li>
-                                                            <li><a href="#">Common ontologies</a></li>
+                                                            <li><a href="CommonOverview.html">Common Ontologies</a></li>
                                                         </ul>
                                                     </div>
                                                 </li>
-                                                <li><a href="#">Use case</a></li>
+                                                <li><a href="UseCases.html">Use case</a></li>
                                                 <li><a href="Knowledge Explorer.html">Knowledge Explorer</a></li>
                                             </ul>
                                         </div>
@@ -218,11 +218,11 @@
                                                                                 </ul>
                                                                             </div> 
                                                                         </li>
-                                                                        <li><a href="#">Common ontologies</a></li>
+                                                                        <li><a href="CommonOverview.html">Common Ontologies</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </li>
-                                                            <li><a href="#">Use case</a></li>
+                                                            <li><a href="UseCases.html">Use case</a></li>
                                                             <li><a href="Knowledge Explorer.html">Knowledge Explorer</a></li>
                                                         </ul>
                                                     </div>
@@ -304,7 +304,7 @@
                                                             <li><a href="HVACOverview.html">HVAC</a></li>
                                                                 <ul class="dropdown">
                                                                     <li class="has-dropdown">
-                                                                        <a href="HVACOntology.html">HVAC Ontology</a>
+                                                                        <a  style="text-align:center" href="HVACOntology.html">HVAC Ontology</a>
                                                                     </li>
                                                                 </ul>
                                                             <li><a href="GridOverview.html">Grids</a></li>
@@ -312,11 +312,11 @@
                                                         </ul>
                                                     </div> 
                                                 </li>
-                                                <li><a href="#">Common ontologies</a></li>
+                                                <li><a href="CommonOverview.html">Common Ontologies</a></li>
                                             </ul>
                                         </div>
                                     </li>
-                                    <li><a href="#">Use case</a></li>
+                                    <li><a href="UseCases.html">Use case</a></li>
                                     <li><a href="Knowledge Explorer.html">Knowledge Explorer</a></li>
                                 </ul>
                             </nav>
@@ -331,50 +331,18 @@
                                     <div>
                                         <h1>HVAC</h1>
                                     </div>
-                                    <div>
-                                        <p>The HVAC ontology defines systems relative to cooling, ventilation and air conditioning systems in building, their subsystems such as heating valve, cooling valve and the relationships between them. The HVAC is a system has three subsystems: the plt:HeatingSystem that is related by the relation plt:hasHeatingSystem, the &nbsp;plt:CoolingSystem &nbsp;that is related by the relation plt:hasCoolingSystem and the plt:VentilationSystem that is related by the relation plt:hasVentilationSystem. &nbsp;Saref:HVAC is located (s4bldg:is-ContainedIn) in s4bldg:Building. This HVAC is controlled by a plt:BuildingManagementSystem that controls (brick:controls) the HVAC.&nbsp;</p>
-                                        <p>The cooling system and heating system has respectively plt:CoolingValve and plt:HeatingValve that are their subsystem (seas:subSystemOf). Sometime, in HVAC system there is also an plt:AirHandlerUnit that is a seas:subSystemOf the saref:HVAC. This air handler is connected to the heating, the cooling, and the ventilation systems. A boiler (plt:Boiler) &nbsp;or heating coil (plt:HeatingCoil) can be subSystem of the heating system and the chiller (plt:Chiller) or cooling coil (plt:CoolingCoil) is a subSystem &nbsp;of cooling system. The plt:Fancoil that has a plt:Fan and s4bldg:Coil as a subsystem, is connected to the air handler unit.</p>
-                                    </div>
-                                </div>
+                                    <p><span data-contrast="none">Pilots: #3a, #3b, and #3c concern mainly two distinct domains: Building and HVAC.&nbsp; The&nbsp; HVAC module developed in the platoon project aims to cover the use cases defined in these pilots.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:257}">&nbsp;</span></p>
+                                    <p><span data-contrast="none">As the main common needs between the uses cases pilots, is&nbsp; the HVAC concept. Different ontologies, already define this concept such as saref and brickschema. Brick </span><span data-contrast="none">ontology was identified as a good candidate that covers a big part of the HVAC domain. However after analyzing the taxonomy of this ontology, we detect modelling error concerning the use of subsumption relationship (</span><span data-contrast="none">rdfs:subClassOf</span><span data-contrast="none">). Indeed, the subsumption relationship was confused with the part of (</span><span data-contrast="none">part_of</span><span data-contrast="none">) relationship. For example, the boiler, pump, fan, filter, and valve are all considered as HVAC whereas that are part of the HVAC system. Then for brick concepts we prefer to use the </span><span data-contrast="none">rdfs:seeAlso </span><span data-contrast="none">relationship.</span><span data-contrast="none">&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:257}">&nbsp;</span></p>
+                                    <p><span data-contrast="none">The figure below shows an extract of the diagram to represent the HVAC ontology.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:257}">&nbsp;</span></p>                                </div>
                                 <div>
                                     <figure>
-                                        <img src="./img/HVAC.drawio.png" alt="Image">
+                                        <img src="./img/Extracts of platoon Modules-HVAC.drawio.png" alt="Image">
                                         <figcaption>Platoon Data Model - HVAC</figcaption>
                                     </figure>
                 
-                                    <div>
-                                        <h2>Use Cases:&nbsp;</h2>
-                                    </div>
-                                    <div>
-                                        <ul>
-                                            <li>
-                                                <p>Providing Demand Response Service through HVAC control&nbsp;</p>
-                                            </li>
-                                            <li>
-                                                <p>Optimization of the control of the HVAC regarding occupancy (platoon pilot 3b).&nbsp;</p>
-                                            </li>
-                                            <li>
-                                                <p>Optimization HVAC operation as function of building and renewable energy resource (RES) characteristics, building comfort constraints, ambient conditions and energy market price following a multi-objective pattern which targets to reduce the overall energy bill and maximize the usage of RES. &nbsp;&nbsp;</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <ul>
-                                            <li>
-                                                <p>Advanced energy management system for Tertiary Buildings&nbsp;</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <p>&nbsp;</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    Note: In the diagram, reused concept are represented by the grey boxes, and the new concept are represented in bleu boxes. 
                         <div>
-                            <h2><a style="font-weight:380;" href="HVACOntology.html">HVAC Ontology -></a></h2>
+                            <h3><a style="font-weight:380;" href="HVACOntology.html">HVAC Ontology -></a></h3>
                         </div>
                                                 </div>
 

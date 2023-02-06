@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SEDMOON</title>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+        <div class="mobile-menu">
+            <div class="mobile-overlay" id="mobile-overlay"></div>
+            <div class="mobile-container">
+                <h2>Menu <a href="#" id="mobile-close">✕</a> </h2>
+                <nav aria-label="Mobile" class="mobile-nav">
+                    <ul>
+                        <li><a href="#" aria-current="page">Home</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Projects</a>
+                            <div class="dropdown-container">
+                                <ul class="dropdown">
+                                    <li class="has-dropdown">
+                                        <a href="#">Platoon</a>
+                                        <div class="dropdown-container">
+                                            <ul class="dropdown">
+                                                <li><a href="PlatoonPresentation.html">Presentation</a></li>
+                                                <li class="has-dropdown">
+                                                    <a href="PlatoonOntologies.html">Ontologies</a>
+                                                    <div class="dropdown-container">
+                                                        <ul class="dropdown">
+                                                            <li><a href="#">Overview</a></li>
+                                                            <li class="has-dropdown">
+                                                                <a href="#">Topics</a>
+                                                                <div class="dropdown-container">
+                                                                    <ul class="dropdown">
+                                                                        <li><a href="#">Building</a></li>
+                                                                        <li><a href="#">HVAC</a></li>
+                                                                        <li><a href="#">Grids</a></li>
+                                                                        <li>                                                                    <a href="RenewableOverview.html">Renewable Energy
+</a></li>
+                                                                    </ul>
+                                                                </div> 
+                                                            </li>
+                                                            <li class="has-dropdown active">
+
+                                                            <li><a href="CommonOverview.html">Common Ontologies</a>
+                                                            <ul class="dropdown">
+                                                                <li class="has-dropdown">
+                                                                    <a href="GridOntology.html">Grid Ontology</a>
+                                                                </li>
+                                                                <li class="has-dropdown">
+                                                                    <a href="ElectricPowerTransformerOntology.html">Electric Power Transformer Ontology</a>
+                                                                </li>
+                                                                <li class="has-dropdown">
+                                                                    <a href="StorageSystemOntology.html">Storage System Ontology</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li></li>
+
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li><a href="UseCases.html">Use case</a></li>
+                                                <li><a href="Knowledge Explorer.html">Knowledge Explorer</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="has-dropdown"><a href="#">Omega X</a></li>
+                                    <li class="has-dropdown"><a href="#">Enershare</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Publications</a>
+                            <div class="dropdown-container">
+                                <ul class="dropdown">
+                                    <li><a href="#">Deliverables</a></li>
+                                    <li><a href="#">Scientific Papers</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Resources</a>
+                            <div class="dropdown-container">
+                                <ul class="dropdown">
+                                    <li><a href="#">Semantic Technologies</a></li>
+                                    <li><a href="#">Natural Language Processing</a></li>
+                                    <li><a href="#">Machine Learning</a></li>
+                                    <li><a href="#">Computer Vision</a></li>
+                                    <li><a href="#">Speech Processing</a></li>
+                                    <li><a href="#">Robotics</a></li>
+                                    <li><a href="#">Trust, Privacy and Transparency</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">News</a>
+                            <div class="dropdown-container">
+                                <ul class="dropdown">
+                                    <li><a href="#">Blogs</a></li>
+                                    <li><a href="#">Webinars</a></li>
+                                    <li><a href="#">Conferences</a></li>
+                                    <li><a href="#">Internship Offers</a></li>
+                                    <li><a href="#">Job Offers</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Partners</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Join Us</a>
+                            <div class="dropdown-container">
+                                <ul class="dropdown">
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Newsletter</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <header>
+            <div class="wrapper header-wrapper">
+                <div class="header-sitename">
+                    <img src="./img/sedmoon-logo.png" alt="SEDMOON - SEmantic Data MOdels Of ENergy">
+                </div>
+                <nav aria-label="Main" class="header-nav">
+                    <ul>
+                        <li><a href="#" aria-current="page">Home</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Projects</a>
+                            <div class="dropdown-container">
+                                <ul class="dropdown">
+                                    <li><a href="PlatoonOverview.html">Platoon</a></li>
+                                    <li><a href="#">Omega X</a></li>
+                                    <li><a href="#">Enershare</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Publications</a>
+                            <div class="dropdown-container">
+                                <ul class="dropdown">
+                                    <li><a href="#">Deliverables</a></li>
+                                    <li><a href="#">Scientific Papers</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Resources</a>
+                            <div class="dropdown-container">
+                                <ul class="dropdown">
+                                    <li><a href="#">Semantic Technologies</a></li>
+                                    <li><a href="#">Natural Language Processing</a></li>
+                                    <li><a href="#">Machine Learning</a></li>
+                                    <li><a href="#">Computer Vision</a></li>
+                                    <li><a href="#">Speech Processing</a></li>
+                                    <li><a href="#">Robotics</a></li>
+                                    <li><a href="#">Trust, Privacy and Transparency</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">News</a>
+                            <div class="dropdown-container">
+                                <ul class="dropdown">
+                                    <li><a href="#">Blogs</a></li>
+                                    <li><a href="#">Webinars</a></li>
+                                    <li><a href="#">Conferences</a></li>
+                                    <li><a href="#">Internship Offers</a></li>
+                                    <li><a href="#">Job Offers</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Partners</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Join Us</a>
+                            <div class="dropdown-container">
+                                <ul class="dropdown">
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Newsletter</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-mobile" id="mobile-toggle">
+                    <a href="#">Menu</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <h1>
+                    Innovative and Smart Solutions for R&D Community
+                </h1>
+            </section>
+            <section class="content">
+                <div class="page-wrapper">
+                    <div class="mobile-menu">
+                        <div class="mobile-overlay" id="mobile-overlay"></div>
+                        <div class="mobile-container">
+                            <h2>Menu <a href="#" id="mobile-close">✕</a> </h2>
+                            <nav aria-label="Mobile" class="mobile-nav">
+                                <ul>
+                                    <li><a href="#" aria-current="page">Home</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li class="has-mobile-dropdown">
+                                        <a href="#">Projects</a>
+                                        <div class="dropdown-container">
+                                            <ul class="dropdown">
+                                                <li class="has-mobile-dropdown">
+                                                    <a href="#">Platoon</a>
+                                                    <div class="dropdown-container">
+                                                        <ul class="dropdown">
+                                                            <li><a href="PlatoonPresentation.html">Presentation</a></li>
+                                                            <li><a href="#">Overview</a></li>
+                                                            <li class="has-mobile-dropdown">
+                                                                <div class="dropdown-container">
+                                                                    <ul class="dropdown">
+                                                                        <li class="has-mobile-dropdown">
+                                                                            <a href="#">Topics</a>
+                                                                            <div class="dropdown-container">
+                                                                                <ul class="dropdown">
+                                                                                    <li><a href="#">Building</a></li>
+                                                                                    <li><a href="#">HVAC</a></li>
+                                                                                    <li><a href="#">Grids</a></li>
+                                                                                    <li>                                                                    <a href="RenewableOverview.html">Renewable Energy
+</a></li>
+                                                                                </ul>
+                                                                            </div> 
+                                                                        </li>
+                                                                        <li class="has-dropdown active">
+                                                                        <li><a href="CommonOverview.html">Common Ontologies</a></li>
+                                                                        <ul class="dropdown">
+                                                                            <li class="has-dropdown">
+                                                                                <a href="GridOntology.html">Grid Ontology</a>
+                                                                            </li>
+                                                                            <li class="has-dropdown">
+                                                                                <a href="ElectricPowerTransformerOntology.html">Electric Power Transformer Ontology</a>
+                                                                            </li>
+                                                                            <li class="has-dropdown">
+                                                                                <a href="StorageSystemOntology.html">Storage System Ontology</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="UseCases.html">Use case</a></li>
+                                                            <li><a href="Knowledge Explorer.html">Knowledge Explorer</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="has-mobile-dropdown"><a href="#">Omega X</a></li>
+                                                <li class="has-mobile-dropdown"><a href="#">Enershare</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="has-mobile-dropdown">
+                                        <a href="#">Publications</a>
+                                        <div class="dropdown-container">
+                                            <ul class="dropdown">
+                                                <li><a href="#">Deliverables</a></li>
+                                                <li><a href="#">Scientific Papers</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="has-mobile-dropdown">
+                                        <a href="#">Resources</a>
+                                        <div class="dropdown-container">
+                                            <ul class="dropdown">
+                                                <li><a href="#">Semantic Technologies</a></li>
+                                                <li><a href="#">Natural Language Processing</a></li>
+                                                <li><a href="#">Machine Learning</a></li>
+                                                <li><a href="#">Computer Vision</a></li>
+                                                <li><a href="#">Speech Processing</a></li>
+                                                <li><a href="#">Robotics</a></li>
+                                                <li><a href="#">Trust, Privacy and Transparency</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="has-mobile-dropdown">
+                                        <a href="#">News</a>
+                                        <div class="dropdown-container">
+                                            <ul class="dropdown">
+                                                <li><a href="#">Blogs</a></li>
+                                                <li><a href="#">Webinars</a></li>
+                                                <li><a href="#">Conferences</a></li>
+                                                <li><a href="#">Internship Offers</a></li>
+                                                <li><a href="#">Job Offers</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Partners</a></li>
+                                    <li class="has-mobile-dropdown">
+                                        <a href="#">Join Us</a>
+                                        <div class="dropdown-container">
+                                            <ul class="dropdown">
+                                                <li><a href="#">Contact</a></li>
+                                                <li><a href="#">Newsletter</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    
+                    <main class="has-sidebar">
+                        <aside>
+                            <div class="sidebar-info">
+                                <h2>Platoon</h2>
+                                <p>Digital platform and Analytics tools for Energy</p>
+                            </div>
+                            <nav aria-label="Sidebar" class="sidebar-nav">
+                                <ul>
+                                    <li><a href="PlatoonPresentation.html">Presentation</a></li>
+                                    <li class="has-dropdown active">
+                                        <a href="PlatoonOntologies.html">Ontologies</a>
+                                        <div class="dropdown-container">
+                                            <ul class="dropdown">
+                                                <li><a href="PlatoonOverview.html">Overview</a></li>
+                                                <li class="has-dropdown active">
+                                                    <a href="#">Topics</a>
+                                                    <div class="dropdown-container">
+                                                        <ul class="dropdown">
+                                                            <li><a href="BuildingOverview.html">Building</a></li>
+                                                            <li><a href="HVACOverview.html">HVAC</a></li>
+                                                            <li><a href="GridOverview.html">Grids</a></li>
+                                                            <li><a href="RenewableOverview.html">Renewable Energy</a></li>
+                                                        </ul>
+                                                    </div> 
+                                                </li>
+                                                <li class="has-dropdown active">
+                                                    <li class="has-dropdown active">
+                                                        <a href="CommonOverview.html">Common Ontologies</a>
+                                                        <div class="dropdown-container">
+                                                            <ul class="dropdown">
+                                                                <li><a style="text-align:center"  href="EnergyMarketOntology.html" >Energy Market Ontology</a></li>
+                                                                <li><a style="text-align:center"  href="EnergyOntology.html" >Energy Measure Ontology</a></li>
+                                                                <li><a style="text-align:center"  href="EnergyManagementOntology.html" >Energy Management Ontology</a></li>
+                                                                <li><a style="text-align:center"  href="ElectricPowerSystemOntology.html" style="color : var(--color-accent);background : #FFFFFF;">Electric Power System Ontology</a></li>
+                                                                <li><a style="text-align:center"  href="EventOntology.html" >Event Ontology</a></li>
+                                                                <li><a style="text-align:center"  href="FailureandDamageOntology.html" >Failure and Damage Ontology</a></li>
+                                                                <li><a style="text-align:center"  href="ForecastingOntology.html" >Forecasting Ontology</a></li>
+                                                                <li><a style="text-align:center"  href="GenericPropertyOntology.html" >Generic Property Ontology</a></li>
+                                                                <li><a style="text-align:center"  href="KPIOntology.html" >KPI Ontology</a></li>
+                                                                <li><a style="text-align:center"  href="MeterOntology.html" >Meter Ontology</a></li>
+                                                                <li><a style="text-align:center"  href="ScheduleOntology.html" >Schedule Ontology</a></li>
+                                                                <li><a style="text-align:center"  href="SensorOntology.html" >Sensor Ontology</a></li>
+                                                                <li><a style="text-align:center"  href="StatusCodeAlarmOntology.html" >Status Code Alarm Ontology</a></li>
+                                                            </ul>
+                                                        </div> 
+                                                    </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="UseCases.html">Use case</a></li>
+                                    <li><a href="Knowledge Explorer.html">Knowledge Explorer</a></li>
+                                </ul>
+                            </nav>
+                        </aside>
+                        <section class="content">
+                            
+                <div class="wrapper">
+                    <div class="text-wrapper">
+                        <div>
+                            <h1>Common Ontologies</h1>
+                            <p><span data-contrast="auto">All pilots in PLATOON project share common notions that are integrated in PLATOON </span><strong><em><span data-contrast="auto">Common Ontologies</span></em></strong><span data-contrast="auto">. These notions are related to weather, measurement, forecasting, failures, damages, sensors, etc.&nbsp;</span></p>
+<p><span data-contrast="auto">14 </span><strong><em><span data-contrast="auto">Common Ontologies </span></em></strong><span data-contrast="auto">are designed in the PLATOON project. </span></p>
+<p><span data-contrast="auto">See below some examples of PLATOON Common Ontologies.</span></p>
+                            <div>
+                                <div>
+                                    
+                            <div>
+                                <div>
+                                    <p><br></p>
+                                    <h2>Energy Market&nbsp;</h2>
+                                </div>
+                                <div>
+                                    <p>The platoon energy market&nbsp;ontology describes&nbsp;the&nbsp;vocabulary&nbsp;of energy market&nbsp;for&nbsp;the&nbsp;Platoon project.&nbsp;It consists&nbsp;of&nbsp;entities relative to&nbsp;buying and selling energy.&nbsp;It&nbsp;is an extension of&nbsp;seas&nbsp;price property ontology(seas:PricePropertyOntology),&nbsp;seas offering ontology(seas:OfferingOntology),platoon&nbsp;electric power system&nbsp;ontology(plt:ElectricPowerSystemOntology),&nbsp;platoon energy measure ontology&nbsp;(plt:EnergyMeasureOntology)&nbsp;and cim ontology(<a href="http://www.iec.ch/TC57/CIM" rel="noreferrer noopener" target="_blank">http://www.iec.ch/TC57/CIM#</a>).). A seas:Contract is a container for transactions It is specifically defined in FIBO ontology as &ldquo;voluntary, deliberate agreement between competent parties to which the parties agree to be legally bound, and for which the parties provide valuable consideration&rdquo;. In addition it defines specific energy contacts gas contract (plt:GasContract) means the agreement under which gas is sold and delivered by a seller to a buyer, and electricity contract  (plt:ElectricityContract) means the agreement for the purchase of electricity. &nbsp; Each contract is about the following properties plt:GasEnergyProperty and seas:ElectricEnergyProperty. It is also characterized by a price (saref:Price) that can be the selling price (plt:hasSellingPrice) and the buying price (plt:hasBuyingPrice).&nbsp;</p>
+                                </div>
+                                <div>
+                                    <figure>
+                                        
+                                        <img src="./img/Extracts of platoon Modules-EnergyMarket.drawio.png" alt="Image">
+                                        <figcaption>Platoon Data Model - Electic Merket</figcaption>
+                                    </figure>
+                
+                                    <div>
+    
+                                <div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <h2><span style="font-size: 20px;">Use Cases:&nbsp;</span></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>Balancing on country level (balancing services)&nbsp;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <p>Balancing Regional Level&nbsp;</p>
+                                    </li>
+                                    <li>
+                                        <p>Advanced energy management system for Tertiary Buildings&nbsp;</p>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <h3><a style="font-weight:380;font-size: 20px;" href="EnergyMarketOntology.html">Energy Market Ontology -></a></h3>
+                                </div> 
+                                <p><br></p>
+                                <div>
+                                    <div>
+                                        <h2>Electric Power System&nbsp;</h2>
+                                    </div>
+                                    <div>
+                                        <p>The platoon Electric Power System Ontology is one of common vocabulary modules of platoon ontology. It defines electric power systems that consume, produce, or store electricity. It extends seas electric power system ontology (seas:ElectricPowerSystemeOntology) with some electric power producers, control systems and lighting &nbsp;systems.&nbsp;</p>
+                                    </div>
+                                    <div>
+                                        <figure>
+                                            
+                                            <img src="./img/Extracts of platoon Modules-electric power system.drawio.png" alt="Image">
+                                            <figcaption>Platoon Data Model - Electic Power System</figcaption>
+                                        </figure>
+                    
+                                    </div>
+        
+                                    <div>
+                                        <h2><span style="font-size: 20px;">Use Cases:&nbsp;</span></h2>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <p>Building Heating &amp; Cooling consumption Analysis and Forecast &nbsp;</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <p>Load/Demand forecasting&nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <p>Service for forecasting the power output of wind farms, the related uncertainties, and the optimal use of wind power in power system operations to facilitate large-scale integration of wind generation.&nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <p>Service for analyzing and comparison between unexpected variations to voltage profile of the power system before and after RES integration to the power system.&nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <p>Load Demand forecast on transmission level&nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <p>Monitoring and Analysis of energy meters data of ROM large asset&nbsp;</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <p>Advanced energy management system for Tertiary Buildings&nbsp;</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3><a style="font-weight:380;font-size: 20px;" href="ElectricPowerSystemOntology.html">Electric Power System Ontology -></a></h3>
+                                    </div> 
+                                </div>
+                                <p><br></p>
+                                <h2>Event</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <p>The event ontology describes the platoon event vocabulary for the Platoon project. This module defines two kinds of events, scheduled and unscheduled events that can occur on systems defined on platoon tools. It includes load interruption event, demand response derogation event, stop events and alert (plt:Alert) that is quick to notice any unusual and potentially dangerous or difficult circumstances.&nbsp;</p>
+                            <div>
+                                <figure>
+                                    
+                                    <img src="./img/Extracts of platoon Modules-event.drawio.png" alt="Image">
+                                    <figcaption>Platoon Data Model - Event</figcaption>
+                                </figure>
+            
+                            </div>
+
+                            <div>
+                                <h2><span style="font-size: 20px;">Use Cases:&nbsp;</span></h2>
+                            </div>
+                        </div>
+                        <div>
+                            <ul>
+                                <li style="font-size: 16px;">
+                                    <p><span">Transformer predictive maintenance</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <p><span>Service for analyzing and comparison between unexpected variations to voltage profile of the power system before and after RES integration to the power system.&nbsp;</span></p>
+                            </li>
+                            <li>
+                                <p>Balancing on country level (balancing services)&nbsp;</p>
+                            </li>
+                            <li>
+                                <p>Balancing Regional Level&nbsp;</p>
+                            </li>
+                            <li>
+                                <p>Advanced energy management system for Tertiary Buildings&nbsp;</p>
+                            </li>
+                        </ul>
+                        <div>
+                            <h3><a style="font-weight:380;font-size: 20px;" href="EventOntology.html">Event Ontology -></a></h3>
+                        </div> 
+                                <div>
+                                    <div>
+                                        <h2>Energy Measure&nbsp;</h2>
+                                    </div>
+                                    <div>
+                                        <p>The energy measure ontology is the vocabulary for describing energy measure. It defines the consumption, the production, the load of energy, their evaluations, and relations with electric power systems.&nbsp;</p>
+                                    </div>
+                                    <div>
+                                        <figure>
+                                            
+                                            <img src="./img/Extracts of platoon Modules-energy.drawio.png" alt="Image">
+                                            <figcaption>Platoon Data Model - Energy</figcaption>
+                                        </figure>
+                    
+                                        <div>
+        
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <h2><span style="font-size: 20px;">Use Cases:&nbsp;</span></h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>Building Heating &amp; Cooling consumption Analysis and Forecast&nbsp;</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <p>Predictive maintenance of cooling &amp; heating plants&nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <p>Lighting Consumption Estimation &amp; Benchmarking&nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <p>Energy Consumption Benchmarking&nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <p>Consumptions and Occupancy Profile Correlator&nbsp;</p>
+                                            </li>
+                                            <div>
+                                                <h3><a style="font-weight:380;font-size: 20px;" href="EnergyOntology.html">Energy Ontology -></a></h3>
+                                            </div> 
+                                            <p>&nbsp;</p>
+                                                <h2>Energy Management&nbsp;</h2>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    
+        
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <p>Service for analyzing and comparison between unexpected variations to voltage profile of the power system before and after RES integration to the power system.&nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <p>Balancing on country level (balancing services)&nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <p>Load Demand forecast on transmission level&nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <p>Monitoring and Analysis of energy meters data of ROM large asset&nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <p>Advanced energy management system for Tertiary Buildings&nbsp;</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3><a style="font-weight:380;font-size: 20px;" href="EnergyManagementOntology.html">Energy Management Ontology -></a></h3>
+                                    </div> 
+                                </div>
+                                <div>
+                                    <div>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                    <div>
+                                        <h2>Failure and Damage&nbsp;</h2>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p>The failure and damage ontology describes the damages and failures can concern each entity that perform a function with a certain efficiency. This module defines failures in general way that should be extended to describe failures and damages in specific domain like wind turbine domain. The concept damage (plt:Damage)is the more generic concept to represent all damages. It is a dependent concept that is inherent to a specific entity. Then, each plt:Damage is linked to an entity (seas:FeatureOfInterest) with the relation plt:isDamageOf. &nbsp; The inverse relation is plt:hasDamage that links an entity to its damage. The plt:Damage can leads to (plt:leadsTo) to failure event (cim:FailureEvent) which is an plt:unscheduledEvent. The cim:FailureEvent is related to the seas:FeatureOfInteres with the relationship plt:affects. A damage can have a level of criticality that is represented by the plt:hasSeverityLevel relationship that relates the plt:Damage to plt:SeverityLevelProperty. This later has an seas:evaluation plt:SeverityLevelEvaluation. Then from this general representation of failures and damages, we can represent a specific failure case of some pilot. For example, the plt:DegradationConstantDamage which is a plt:Damage related to seas:SolarPanel with the relation plt:isDamageOf. This plt:DegradationConstantDamage may cause (plt:cause) an efficiency degradation (plt:EfficiencyDegradation) that plt:leadsTo a cim:FailureEvent and plt:affects the seas:SolarPanel.&nbsp;</p>
+                                    </div>
+                                    <div>
+                                        <figure>
+                                            
+                                            <img src="./img/Extracts of platoon Modules-failure and damage.drawio.png" alt="Image">
+                                            <figcaption>Platoon Data Model - Failure and Damage</figcaption>
+                                        </figure>
+                    
+                                    </div>
+        
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <h2><span style="font-size: 20px;">Use Cases:&nbsp;</span></h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <p>Predictive maintenance of cooling &amp; heating plants&nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <p>Transformer predictive maintenance&nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <p>Non-technical loss detection in Smart Grids &nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <p>Enhanced diagnostics of failure in electrical drivetrain components in wind turbines using a digital twin approach&nbsp;</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <h3><a style="font-weight:380;font-size: 20px;" href="FailureandDamageOntology.html">Failure and Damage Ontology -></a></h3>
+                                        </div> 
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h2>Forecasting&nbsp;</h2>
+                                    </div>
+                                    <div>
+                                        <p>The platoon forecasting ontology describe the forecasting vocabulary for the Platoon project. It extends seas forecasting ontology (seas:ForecastingOntology). In seas ontology seas:Forecaster that implement seas:Forecasting procedures and do seas:Forecasts. tool. Different forecasts occur on platoon project (forecast of occupancy, forecast of energy consumption, forecast of load interruption, forecast of energy production, weather prediction&hellip;); to represent forecasting we reuse seas forecast template.&nbsp;</p>
+                                    </div>
+                                    <div>
+                                        <figure>
+                                            
+                                            <img src="./img/Extracts of platoon Modules-forcasting.drawio.png" alt="Image">
+                                            <figcaption>Platoon Data Model - Forecasting</figcaption>
+                                        </figure>
+                    
+                                    </div>
+        
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <h2><span style="font-size: 20px;">Use Cases:&nbsp;</span></h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <p>Transformer predictive maintenance&nbsp;</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <p>Energy Consumption Forecaster&nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <p>Energy Efficiency and Predictive Maintenance In The Smart Tertiary Building Hubgrade&nbsp;</p>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <h3><a style="font-weight:380;font-size: 20px;" href="ForecastingOntology.html">Forecasting Ontology -></a></h3>
+                                        </div> 
+                                    </div>
+                                    <div>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                    <div>
+                                        <h2>Generic Property&nbsp;</h2>
+                                    </div>
+                                    <div>
+                                        <p>The generic property defines&nbsp;generic properties&nbsp;shared by&nbsp;different&nbsp;modules ontologies. It extends seas generic property ontology.&nbsp;Like&nbsp;all modules of platoon&nbsp;ontology&nbsp;,&nbsp;the&nbsp;representation of&nbsp;properties and their values&nbsp;follow the&nbsp;pattern used in seas&nbsp;EvaluationsOntology&nbsp;(<a href="https://w3id.org/seas/EvaluationOntology" rel="noreferrer noopener" target="_blank">https:/w3id.org/seas/EvaluationOntology</a>).&nbsp;</p>
+                                       
+            
+                                        <div>
+                                            <h3><a style="font-weight:380;font-size: 20px;" href="GenericPropertyOntology.html">Generic Property Ontology -></a></h3>
+                                        </div> 
+                                        
+                                        <p><br></p>
+                                        <div>
+                                            <div>
+                                                <h2>KPI&nbsp;</h2>
+                                            </div>
+                                            <div>
+                                                <p>The KPI ontology defines the vocabulary to represent the key performance. It consists of performance measurement of systems. &nbsp;</p>
+                                            </div>
+                                            <div>
+                                                <figure>
+                                                    
+                                                    <img src="./img/Extracts of platoon Modules-kpi.drawio.png" alt="Image">
+                                                    <figcaption>Platoon Data Model - KPI</figcaption>
+                                                </figure>
+                            
+                                            </div>
+                
+                                        
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <div>
+                                                                <h2><span style="font-size: 20px;">Use Cases:&nbsp;</span></h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul>
+                                                    <li>Key performance monitoring&nbsp;</li>
+                                                </ul>
+                                           
+                
+                                            <div>
+                                                <h3><a style="font-weight:380;font-size: 20px;" href="KPIOntology.html">KPI Ontology -></a></h3>
+                                            </div> 
+                                            
+                                            <div>
+                                                <p>&nbsp;</p>
+                                            </div>
+                                            <div>
+                                                <h2>Meter&nbsp;</h2>
+                                            </div>
+                                            <div>
+                                                <p>The meter ontology defines systems that records information about measurements. meter implements seas:Metering procedure, do some seas:MeteringExecution and. measures specific property. For example &nbsp; seas:GasMeter which is a meter that seas:measuresProperty the plt:GasFlowProperty.&nbsp;</p>
+                                            </div>
+                                            <div>
+                                                <figure>
+                                                    
+                                                    <img src="./img/Extracts of platoon Modules-Meter.drawio.png" alt="Image">
+                                                    <figcaption>Platoon Data Model - Meter</figcaption>
+                                                </figure>
+                            
+                                                <div>
+                
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <div>
+                                                                <h2><span style="font-size: 20px;">Use Cases:&nbsp;</span></h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul>
+                                                    <li>Monitoring and Analysis of energy meters data of ROM large asset&nbsp;</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <p>Service for forecasting the power output of wind farms, the related uncertainties, and the optimal use of wind power in power system operations in order to facilitate large-scale integration of wind generation.&nbsp;</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Predictive maintenance in renewable energy source power plants&nbsp;</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Monitoring and Analysis of energy meters data of ROM large asset&nbsp;</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3><a style="font-weight:380;font-size: 20px;" href="MeterOntology.html">Meter Ontology -></a></h3>
+                                            </div> 
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <p>&nbsp;</p>
+                                            </div>
+                                            <div>
+                                                <h2>Schedule&nbsp;</h2>
+                                            </div>
+                                            <div>
+                                                <p>The schedule ontology defines concepts related to schedule and Calendar. &nbsp;It reuses schema schema(https://schema.org/Schedule) concept and extends it with some kinds of schedule relative to use case on platoon project, occupancy schedule, calendar(plt:Calendar), holiday.&nbsp;</p>
+                                            </div>
+                                            <div>
+                                                <figure>
+                                                    
+                                                    <img src="./img/Extracts of platoon Modules-Schedule.drawio.png" alt="Image">
+                                                    <figcaption>Platoon Data Model - Schedule</figcaption>
+                                                </figure>
+                                                <div>
+                                                    <h3><a style="font-weight:380;font-size: 20px;" href="ScheduleOntology.html">Schedule Ontology -></a></h3>
+                                                </div> 
+    
+                                                <div>
+                
+                                            <div>
+                                                <p>&nbsp;</p>
+                                            </div>
+                                            <div>
+                                                <h2>Sensor&nbsp;</h2>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <div>
+                                                <p>Sensor ontology defines sensors used on different domains. It includes the concept Sensor their extensions, relative to property that it observes, such as presence sensor (observes occupancy property), wind speed sensor, plt:Anenometer, that observes wind speed property(seas:WindSpeedProperty) and plt:Pyranometer that seas:observesProperty the plt:SolarRadiationProperty. . &nbsp;Furthermore, according to the design pattern used in seas, each sensor implements a seas:Sensing procedure and do some seas:Observation that generate the evaluation value of the property. In this manner we can link between the evaluation of one property to the observation made by a sensor via the relation prov:wasGeneratedBy from provenance ontology (<a href="https://www.w3.org/TR/prov-o" rel="noreferrer noopener" target="_blank">https://www.w3.org/TR/prov-o</a>).&nbsp;</p>
+                                            </div>
+                                            <div>
+                                                <figure>
+                                                    
+                                                    <img src="./img/Extracts of platoon Modules-sensor.drawio.png" alt="Image">
+                                                    <figcaption>Platoon Data Model - Sensor</figcaption>
+                                                </figure>
+                            
+                                                <div>
+                
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <div>
+                                                                <h2><span style="font-size: 20px;">Use Cases:&nbsp;</span></h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul>
+                                                    <li>Monitoring and Analysis of energy meters data of ROM large asset&nbsp;</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <ul>
+                                                    <li>Optimization of the control of the HVAC regarding occupancy&nbsp;</li>
+                                                    <li>
+                                                        <p>Enhanced diagnostics of failure in electrical drivetrain components in wind turbines using a digital twin approach&nbsp;</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Balancing Regional Level&nbsp;</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Balancing on country level (balancing services)&nbsp;</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Advanced energy management system for Tertiary Buildings&nbsp;</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3><a style="font-weight:380;font-size: 20px;" href="SensorOntology.html">Sensor Ontology -></a></h3>
+                                            </div> 
+                                        </div>
+                                        <div>
+                                        
+                                            <div>
+                                                <p>&nbsp;</p>
+                                            </div>
+                                            <div>
+                                                <h2>Status Code Alarm&nbsp;</h2>
+                                            </div>
+                                            <div>
+                                                <p>The status code alarm ontology is the module that represents the vocabulary of the status code and alarms related particularly to wind turbine systems. The goal of this module is to clearly represent the status code related to wind turbine to the notions of alarms.&nbsp;</p>
+                                            </div>
+                                            <div>
+                                                <figure>
+                                                    
+                                                    <img src="./img/Extracts of platoon Modules-statuscode.drawio.png" alt="Image">
+                                                    <figcaption>Platoon Data Model - Status Code Alarm</figcaption>
+                                                </figure>
+                            
+                                                <div>
+                
+                                            <div>
+                                                <p>For each wind turbine, one status code property (plt:StatusCodeProperty) is associated through the relation plt:hasStatusCode. &nbsp;This property triggers (plt:triggers) alarms (saref:Alarm), and has evaluations (plt:StatusCodeEvaluation).The the status code evaluation which occurs intime has a specific status (plt:hasStatus plt:Status)and has renewable energy production status (plt:hasRenewableEnergyProductionStatus) that are status specific to renewable energy production. Four renewable energy production status are defined to distinguish between: &nbsp;the information status (plt:RenewableEnergyProductionInformationStatus) that has the alarm type plt:Information, the warning status plt:RenewableEnergyProductionWarningStatus)that has the alarm type plt:Warning, the manual stop status (plt:RenewableEnergyProductionManualStopStatus) that has the alarm type plt:Breakdown and (iv) the automatic stop status (plt:RenewableEnergyProductionAutomaticStopStatus) that has the alarm type plt:Breakdown. The three alarm types (plt:Information, plt:Warning and plt:Breakdown) are instances of saref:Alarm. &nbsp;</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <div>
+                                                                <h2><span style="font-size: 20px;">Use Cases:&nbsp;</span></h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul>
+                                                    <li>Predictive maintenance&nbsp;</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <p>Monitoring&nbsp;</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <p>Anomaly Detection&nbsp;</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3><a style="font-weight:380;font-size: 20px;" href="StatusCodeAlarmOntology.html">Status Code Alarm Ontology -></a></h3>
+                                    </div> 
+                                </div>
+                                <p><br></p>
+                            </div>
+                            <p><br><br></p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>      
+        </main>
+        <footer>
+            <div class="wrapper footer-wrapper">
+                <nav aria-label="Footer" class="footer-nav">
+                    <span class="footer-copyright">© ENGIE Lab CRIGEN 2022</span>
+                    <ul>
+                        <li><a href="#">Legal notices</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-brand">
+                    <img src="./img/crigen-sdmr-logo.png" alt="ENGIE CRIGEN Lab - SDMR Team">
+                    CSAI LAB - SMDR TEAM
+                </div>
+            </div>
+        </footer>
+    </div>
+	<script src="./js/main.js"></script>
+  </body>
+</html>

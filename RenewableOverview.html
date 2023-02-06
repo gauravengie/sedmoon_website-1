@@ -43,11 +43,11 @@
                                                                     </ul>
                                                                 </div> 
                                                             </li>
-                                                            <li><a href="#">Common ontologies</a></li>
+                                                            <li><a href="CommonOverview.html">Common Ontologies</a></li>
                                                         </ul>
                                                     </div>
                                                 </li>
-                                                <li><a href="#">Use case</a></li>
+                                                <li><a href="UseCases.html">Use case</a></li>
                                                 <li><a href="Knowledge Explorer.html">Knowledge Explorer</a></li>
                                             </ul>
                                         </div>
@@ -218,11 +218,11 @@
                                                                                 </ul>
                                                                             </div> 
                                                                         </li>
-                                                                        <li><a href="#">Common ontologies</a></li>
+                                                                        <li><a href="CommonOverview.html">Common Ontologies</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </li>
-                                                            <li><a href="#">Use case</a></li>
+                                                            <li><a href="UseCases.html">Use case</a></li>
                                                             <li><a href="Knowledge Explorer.html">Knowledge Explorer</a></li>
                                                         </ul>
                                                     </div>
@@ -306,17 +306,17 @@
                                                             <li><a href="RenewableOverview.html">Renewable Energy</a></li>
                                                                 <ul class="dropdown">
                                                                     <li class="has-dropdown">
-                                                                        <a href="RenewableOntology.html">Wind Turbine Ontology</a>
+                                                                        <a  style="text-align:center" href="RenewableOntology.html">Wind Turbine Ontology</a>
                                                                     </li>
                                                                 </ul>
                                                         </ul>
                                                     </div> 
                                                 </li>
-                                                <li><a href="#">Common ontologies</a></li>
+                                                <li><a href="CommonOverview.html">Common Ontologies</a></li>
                                             </ul>
                                         </div>
                                     </li>
-                                    <li><a href="#">Use case</a></li>
+                                    <li><a href="UseCases.html">Use case</a></li>
                                     <li><a href="Knowledge Explorer.html">Knowledge Explorer</a></li>
                                 </ul>
                             </nav>
@@ -331,47 +331,26 @@
                                     <div>
                                         <h1>Wind Turbine</h1>
                                     </div>
-                                    <div>
-<p>Wind turbine ontology describes wind turbine and their components such as the generator and power converter and subcomponents such as rotor and stator. There are two different types of wind turbines: onshore wind turbine (plt:OnshoreWindTurbine) which is located on land, and offshore wind turbine (plt:OffshoreWindTurbine) which is located in bodies of water. Three key components of wind turbine are defined in this module; blade (plt:Blade), nacelle (plt:Nacelle), convertor (plt:Convertor). This module defines also Wind farm (plt:WindFarm) that is composed of a group of wind turbine in the same location used to produce electricity. The wind turbine is related to the wind farm by the (seas:isMemberOf) relation. </p>                                    
-</div>
-                                </div>
+                                        <p><span data-contrast="auto">Pilot #1 concerns the wind turbine domain. It focusses on predictive maintenance in wind energy. The main goal of this pilot use case is to achieve early detection of faults in the electrical components of the powertrain: </span><strong><span data-contrast="auto">generator </span></strong><span data-contrast="auto">and </span><strong><span data-contrast="auto">converter</span></strong><span data-contrast="auto">.&nbsp;</span></p>
+                                        <p><span data-contrast="auto">Through reasoning based on semantics the fault will be diagnosed based on these anomalies and potential root cause pinpointed out. Particularly for the latter a good semantic representation is required, since analytics-driven reasoning should be done on the data.&nbsp;</span></p>
+                                        <p><span data-contrast="auto">In this pilot, focus is on offshore and onshore wind turbines equipped with a doubly fed induction generator.</span></p>
+                                        <p><span data-contrast="none">Then the windTurbine ontology in Platoon project, aims to meet the needs identified in the pilot #1A by analyzing three heterogenous sources:</span></p>
+                                        <ul>
+                                        <li><span data-contrast="none">Detailed description given by the use case according to IEC-62559 template</span></li>
+                                        <li><span data-contrast="none">SCADA data</span></li>
+                                        <li><span data-contrast="none">Maintenance, anomalies, failure Modes, Code Alarms</span></li>
+                                        <li><span data-contrast="none">Business expert and stakeholder interviews</span>&nbsp;</li>
+                                        </ul>
+                                        <p><span data-contrast="none">The figure below shows an extract of the diagram to represent the wind turbine ontology.</span></p>
                                 <div>
                                     <figure>
-                                        <img src="./img/Windturbine.drawio.png" alt="Image">
+                                        <img src="./img/Extracts of platoon Modules-windturbine.drawio.png" alt="Image">
                                         <figcaption>Platoon Data Model - Wind Turbine</figcaption>
                                     </figure>
-                
-                                    <div>
-                                        <h2>Use Cases:&nbsp;</h2>
-                                    </div>
-
-                                    <div>
-                                        <div>
-                                            <ul>
-                                                <li>
-                                                    <p>Predictive maintenance of wind&nbsp;farms&nbsp;</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <ul>
-                                                <li>
-                                                    <p>Service for forecasting the power output of wind farms, the related uncertainties, and the optimal use of wind power in power system operations in order to facilitate large-scale integration of wind generation.&nbsp;</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>&nbsp;</p>
-
-  
-                                    </div>
-                                </div>
+                                    <p><span data-contrast="none">Mainly, Ontowind ontology is used and extended or mapped to complete the missing concepts meeting the pilot needs.&nbsp;</span></p>
+                                    <p><span data-contrast="none">Note: in the diagram, reused concept are represented by the grey boxes, and the new concept are represented in blue boxes.</span></p>
                             </div>
 
-                    <div>
                             <h2><a style="font-weight:380;" href="RenewableOntology.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wind Turbine Ontology -></a></h2>
                         </div>
                     </div>

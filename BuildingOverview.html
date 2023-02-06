@@ -43,11 +43,11 @@
                                                                     </ul>
                                                                 </div> 
                                                             </li>
-                                                            <li><a href="#">Common ontologies</a></li>
+                                                            <li><a href="CommonOverview.html">Common Ontologies</a></li>
                                                         </ul>
                                                     </div>
                                                 </li>
-                                                <li><a href="#">Use case</a></li>
+                                                <li><a href="UseCases.html">Use case</a></li>
                                                 <li><a href="Knowledge Explorer.html">Knowledge Explorer</a></li>
                                             </ul>
                                         </div>
@@ -218,11 +218,11 @@
                                                                                 </ul>
                                                                             </div> 
                                                                         </li>
-                                                                        <li><a href="#">Common ontologies</a></li>
+                                                                        <li><a href="CommonOverview.html">Common Ontologies</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </li>
-                                                            <li><a href="#">Use case</a></li>
+                                                            <li><a href="UseCases.html">Use case</a></li>
                                                             <li><a href="Knowledge Explorer.html">Knowledge Explorer</a></li>
                                                         </ul>
                                                     </div>
@@ -302,7 +302,7 @@
                                                         <ul class="dropdown">
                                                             <li><a href="BuildingOverview.html" style="color : var(--color-accent);background : #FFFFFF;">Building</a></li>
                                                                     <li class="has-dropdown">
-                                                                        <a href="BuildingOntology.html">Building Ontology</a>
+                                                                        <a style="text-align:center"href="BuildingOntology.html">  Building Ontology</a>
                                                                     </li>
                                                             <li><a href="HVACOverview.html">HVAC</a></li>
                                                             <li><a href="GridOverview.html">Grids</a></li>
@@ -310,11 +310,11 @@
                                                         </ul>
                                                     </div> 
                                                 </li>
-                                                <li><a href="#">Common ontologies</a></li>
+                                                <li><a href="CommonOverview.html">Common Ontologies</a></li>
                                             </ul>
                                         </div>
                                     </li>
-                                    <li><a href="#">Use case</a></li>
+                                    <li><a href="UseCases.html">Use case</a></li>
                                     <li><a href="Knowledge Explorer.html">Knowledge Explorer</a></li>
                                 </ul>
                             </nav>
@@ -328,40 +328,25 @@
                             <div>
                                 <h1>Building</h1>
                             </div>
-                            <div>
-                                <p>The platoon building ontology defines the building vocabulary for the Platoon project. The platoon building ontology(plt:BuildingOntology) is an extension of seas Building ontology (seas:BuildingOntology). It reuses also some classes from schema ontology (sch:City, sch:Place, sch:Country). In addition of defined buildings on seas, some kind of buildings have been created; plt:DataCenter, plt:LogisticCenter, plt:Retail and plt:TransformerCenter are declared as subclasses of &nbsp;plt:NonResidentialBuilding( which is equivalent of &nbsp;seas:NonresidentialBuilding ), and plt:Canteen as a subclass of seas:BuildingSpace. The class plt:ClimateZone implements climate zone concept, it consists of areas with distinct climates can be classified using different climatic parameters. Climate zone can contain place (represented by the relation sch:ContainsPlace ), it can be also contained in Place (sch:ContainedInPlace). The concept open air zone(plt:OutdoorZone) and under cover zone(plt:IndoorZone) are a subclass of zone(seas:Zone). The relation energetic performance class (plt:energeticPerformanceClass) is defined to link building space to its the energy performance label(plt:EnergyPerformanceLabel).</p>                            </div>
-                            <div>
-                                <figure>
-                                    <img src="./img/Building.drawio.png" alt="BuildingDataModel">
+                            <p><span data-contrast="none">The pilots : #3a, #3b, and #3c concern two distinct but related domains: Building and HVAC.&nbsp; This module, concerns only the Building side.</span><span data-contrast="none">&nbsp;&nbsp;&nbsp;</span><span data-contrast="none">&nbsp;&nbsp;&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:257}">&nbsp;</span></p>
+                            <p><span data-contrast="none">The pilot #3a: </span><span data-contrast="none">aims to meet two goals in an office building. On the one hand, it aims to optimize the control of the HVAC regarding occupancy. On the other hand, it aims to provide a demand response service through HVAC control. For this Pilot, it is necessary to be able to represent the building and its zones. In addition to the zone properties such as occupancy, indoor temperature, and humidity. The HVAC elements are represented in the HVAC module.&nbsp;&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:257}">&nbsp;</span></p>
+                            <p><span data-contrast="none">Pilot #3b: aims to acquire, aggregate, and process energy consumption and related data of different buildings (often in various forms not coherent between them) to make energy domain-specific data analysis as consumption forecasting, predictive maintenance, benchmarking, and so on. Four different destinations for the building spaces are considered: Datacentre, Logistics, Retail, and Offices (Directional), for a total of 16 buildings organized in groups.&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:257}">&nbsp;</span></p>
+                            <p><span data-contrast="none">Indoor and outdoor zones are also distinguished for lighting consumption and according to climate zone.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:257}">&nbsp;</span></p>
+                            <p><span data-contrast="none">Pilot #3c:&nbsp; </span><span data-contrast="none">takes place in Nanogune, a tertiary sector smart building dedicated to nanotechnology research, based in San Sebastian (Spain). This building is divided into different areas such as offices and laboratories and has both thermal and electrical meters to differentiate the areas.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:257}">&nbsp;</span></p>
+                            <p><span data-contrast="none">In addition of representing the different zones in the building, properties such as comfort and occupancy are also required to be represented.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:257}">&nbsp;</span></p>
+                            <p><span data-contrast="none">Then the building ontology in Platoon project, aims to meet the need identified in these previous pilots&nbsp; by&nbsp; analyzing a detailed description given by each use case according to IEC-62559 template.&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:257}">&nbsp;</span></p>
+                            <p><span data-contrast="none">The figure below shows an extract of the diagram to represent the building ontology.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:257}">&nbsp;</span></p>
+                            <p>&nbsp;</p>                                <figure>
+                                    <img src="./img/Extracts of platoon Modules-Building.drawio.png" alt="BuildingDataModel">
                                     <figcaption>Platoon Data Model - Building</figcaption>
                                 </figure>
-                                <h2>Use cases:</h2>
+<p><span data-contrast="none">Mainly, seas building ontology is used and extended to complete the missing concepts meeting the pilots needs.&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:257}">&nbsp;</span></p>
+<p><span data-contrast="none">Note: in the diagram, reused concept are represented by the grey boxes, and the new concept are represented in bleu boxes.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:257}">&nbsp;</span></p>
                             </div>
+                            <h3><a style="font-weight:380;" href="BuildingOntology.html">Building Ontology -></a></h3>
                         </div>
-                        <div>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <p>Optimization&nbsp;of the&nbsp;control of the HVAC regarding occupancy&nbsp;(platoon pilot 3b).&nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p>Optimization&nbsp;the local renewable energy resources (RES) and HVAC operation as function of building and RES characteristics, building comfort constraints, ambient conditions and energy market price following a multi-objective pattern which targets to reduce the overall energy bill and maximize the usage of&nbsp;RES(platoon pilot 3a).&nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p>Building Heating &amp; Cooling consumption Analysis and Forecast&nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p>Balancing Regional Level&nbsp;</p>
-                                    </li>
-                                    <li>
-                                        <p>Advanced energy management system for Tertiary Buildings&nbsp;</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
+                        
                             <br>
-                        <h2><a style="font-weight:380;" href="BuildingOntology.html">Building Ontology -></a></h2>
                     </div>
                                             </div>
 
